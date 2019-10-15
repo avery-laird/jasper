@@ -12,7 +12,7 @@ description: "Musician"
 
 
 short_url: 'averylairdmusic.com'
-google_analytics: 
+google_analytics: UA-150184978-1
 disqus: 
 # edit baseurl to simply '/' if using as your personal page (instead of a project page)
 baseurl: /
