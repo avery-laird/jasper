@@ -1,0 +1,32 @@
+<section class="author-profile inner">
+    {% assign me = site.data.authors['avery'] %}
+    
+
+    <!-- {% if me.assets %}
+    <figure class="author-image">
+        <div class="img" style="background-image: url({{ site.baseurl }}{{ me.assets }})"><span
+                class="hidden">{{ me.name }}'s Picture</span></div>
+    </figure>
+    {% endif %}
+
+    <h1 class="author-title">{{ me.name }}</h1> -->
+    
+    {% if me.bio %}
+    <div style="display:inline; text-align: justify; text-justify: inter-word;">
+        <h2 class="author-bio">{{ me.bio }}</h2>
+    </div>
+    {% endif %}
+    <div class="author-meta">
+        {% if me.location %}<span
+            class="author-location icon-location">{{ me.location }}</span>{% endif %}
+        {% if me.url %}<span class="author-link icon-link"><a
+                href="{{ me.url_full }}">{{ me.url }}</a></span>{% endif %}
+    
+        <!-- <span class="author-stats"><i class="icon-stats"></i>{% if paginator.total_posts == 0 %}No
+            posts{% elsif paginator.total_posts == 1 %}1 post{% else %}{{ paginator.total_posts }}
+            posts{% endif %}</span> -->
+    </div>
+    
+    
+</section>
+<!-- /author -->
